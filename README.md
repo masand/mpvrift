@@ -9,15 +9,16 @@ There is no "extended" support like chromatic abberation or similar. So you will
 The people at mpv suggested to create an own repository for the shader, so here it is.
 
 ## Steps to use the shader file
+
 1. Download and build mpv (use the scripts at https://github.com/mpv-player/mpv-build for good build support, my steps were:)
-1a. git clone https://github.com/mpv-player/mpv-build.git
-1b. cd mpv-build
-1c. ./update
-1d. ./use-mpv-master
-1e. ./update
-1f. ./build
-1g. (solve all dependency issues like missing *-dev libraries and repeat 1f)
-2. Download mpvrift: git clone https://github.com/masand/mpvrift.git
+  1. `git clone https://github.com/mpv-player/mpv-build.git`
+  2. `cd mpv-build`
+  3. `./update`
+  4. `./use-mpv-master`
+  5. `./update`
+  6. `./build`
+  7. (solve all dependency issues like missing *-dev libraries and repeat 1f)
+2. Download mpvrift: `git clone https://github.com/masand/mpvrift.git`
 3. Run mpv with rift shader:
-   <path-to-mpv-build>/mpv/build/mpv -vo=opengl:post-shaders=<path-to-mpvrift>/mpvrift.glsl <some-side-by-side-3D-video-file>
+   `<path-to-mpv-build>/mpv/build/mpv -vo=opengl:post-shaders=<path-to-mpvrift>/mpvrift.glsl <some-side-by-side-3D-video-file>`
 4. Enjoy!
