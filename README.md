@@ -17,7 +17,7 @@ The people at mpv suggested to create an own repository for the shader, so here 
   4. `./use-mpv-master`
   5. `./update`
   6. `./build`
-  7. (solve all dependency issues like missing *-dev libraries and repeat 1f)
+  7. (solve all dependency issues like missing *-dev libraries and repeat 1.vi.)
 2. Download mpvrift: `git clone https://github.com/masand/mpvrift.git`
 3. Run mpv with rift shader:
    `<path-to-mpv-build>/mpv/build/mpv -vo=opengl:post-shaders=<path-to-mpvrift>/mpvrift.glsl <some-side-by-side-3D-video-file>`
